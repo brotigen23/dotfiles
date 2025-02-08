@@ -1,0 +1,12 @@
+polybar|notice:  Parsing config file: /home/ilya/.config/polybar/config.ini
+polybar|notice:  Loading module 'xworkspaces' of type 'internal/xworkspaces'
+polybar|error: Invalid value for "module/xworkspaces.label-active-underline", using default value (reason: The reference ${colors.} does not exist (no fallback set))
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'memory' of type 'internal/memory'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'temperature' of type 'internal/temperature'
+polybar|notice:  Loading module 'battery' of type 'internal/battery'
+polybar|notice:  Loaded 6 modules
+polybar|notice:  Loaded font "RobotoMono Nerd Font Mono:size=12:style=bold" (name=RobotoMono Nerd Font Mono, offset=3, file=/usr/share/fonts/TTF/RobotoMonoNerdFontMono-Bold.ttf)
+polybar|notice:  Loaded font "RobotoMono Nerd Font Mono:size=24:style=bold" (name=RobotoMono Nerd Font Mono, offset=8, file=/usr/share/fonts/TTF/RobotoMonoNerdFontMono-Bold.ttf)
+polybar|notice:  Loaded font "RobotoMono Nerd Font Mono:size=20:style=bold" (name=RobotoMono Nerd Font Mono, offset=6, file=/usr/share/fonts/TTF/RobotoMonoNerdFontMono-Bold.ttf)

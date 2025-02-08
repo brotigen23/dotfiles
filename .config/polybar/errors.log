@@ -1,0 +1,9 @@
+polybar|notice:  Parsing config file: /home/ilya/.config/polybar/config.ini
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'battery' of type 'internal/battery'
+polybar|notice:  Loaded 2 modules
+polybar|notice:  Loaded font "RobotoMono Nerd Font Mono:size=14:style=bold" (name=RobotoMono Nerd Font Mono, offset=3, file=/usr/share/fonts/TTF/RobotoMonoNerdFontMono-Bold.ttf)
+polybar|notice:  Loaded font "RobotoMono Nerd Font Mono:size=32:style=bold" (name=RobotoMono Nerd Font Mono, offset=8, file=/usr/share/fonts/TTF/RobotoMonoNerdFontMono-Bold.ttf)
+polybar|notice:  Loaded font "RobotoMono Nerd Font Mono:size=20:style=bold" (name=RobotoMono Nerd Font Mono, offset=6, file=/usr/share/fonts/TTF/RobotoMonoNerdFontMono-Bold.ttf)
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
