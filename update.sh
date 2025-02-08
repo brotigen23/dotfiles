@@ -9,3 +9,11 @@ cp ~/.bashrc .
 rm -rf .config/nvim
 cp -r ~/.config/nvim .config
 
+
+# Helix
+rm -rf .config/helix
+cp -r ~/.config/helix
+
+# Polybar
+rm -rf .config/polybar
+cp -r ~/.config/polybar
