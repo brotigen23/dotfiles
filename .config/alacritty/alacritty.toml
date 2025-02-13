@@ -1,0 +1,11 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/gruvbox_dark.toml"
+]
+
+[window]
+#decorations="None"
+
+[font]
+normal = {family = "RobotoMono Nerd Font Mono", style = "bold"}
+

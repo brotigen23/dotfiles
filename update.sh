@@ -26,31 +26,37 @@ cp -r ~/.config/polybar .config/
 echo 'polybar config updated'
 }
 
+function updateAlacritty {
+rm -rf .config/alacritty
+cp -r ~/.config/alacritty .config/
+echo 'alacritty config updated'
+}
+
 echo '
 Choose dir:
 1 - all
-2 - bash
-3 - helix
-4 - polybar
-фыв 
+2 - helix
+3 - polybar
 '
 
 read key
 
 case "$key" in
   "1"  )
-
+  updateHelix
+  updatePolybar
+  updateAlacritty
   ;;
   "2"  )
-  ;;
-  "3"  )
   updateHelix
   ;;
-  "4"  )
+  "3"  )
   updatePolybar
   ;;
+  "4"  )
+  ;;
   *    )
-
+  echo "fuck you"
   ;;
 esac
 
