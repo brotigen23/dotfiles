@@ -22,25 +22,13 @@ vim.opt.rtp:prepend(lazypath)
 ----------------------------------------------------------------
 -- PLUGINS INSTALL 
 ---------------------------------------------------------------- 
-
 require("lazy").setup({
-  { "catppuccin/nvim", as = "catppuccin" },
-  {
-    'nvim-telescope/telescope.nvim',
-    dependencies = { 'nvim-lua/plenary.nvim' }    
-  },
-  { 'nvim-treesitter/nvim-treesitter' },
-  {
-    'akinsho/bufferline.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' }
-  },
-  {
-    "nvim-tree/nvim-tree.lua",
-    lazy = false,
-    requires = { "nvim-tree/nvim-web-devicons" },
-  },
-  {
-	'morhetz/gruvbox',
-  },
-})
+  -- Загружаем все плагины из папки plugins
+  { import = "plugins" },
+}, {})
 
+
+vim.cmd("colorscheme gruvbox") -- set color theme
+
+-- telescope
+vim.keymap.set("n", "<leader>ff", ":Telescope find_files<cr>")
