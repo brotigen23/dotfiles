@@ -18,17 +18,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-
-----------------------------------------------------------------
--- PLUGINS INSTALL 
----------------------------------------------------------------- 
 require("lazy").setup({
   -- Загружаем все плагины из папки plugins
   { import = "plugins" },
 }, {})
 
 
-vim.cmd("colorscheme gruvbox") -- set color theme
-
--- telescope
-vim.keymap.set("n", "<leader>ff", ":Telescope find_files<cr>")

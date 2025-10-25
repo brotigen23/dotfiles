@@ -11,6 +11,7 @@ opt.cursorline = true
 
 -- Вывод непечатных символов
 -- \t, пробелов и табов(trail) в конце строки, неразрывных пробелов(nbsp) и \n
-vim.o.list = true
-vim.o.listchars = "tab:» ,trail:-,nbsp:+,eol:¬"
+opt.list = true
+opt.listchars = "tab:» ,trail:-,nbsp:+,eol:¬"
 
+opt.clipboard = "unnamedplus"
