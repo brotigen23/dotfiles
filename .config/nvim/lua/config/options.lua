@@ -15,3 +15,5 @@ opt.list = true
 opt.listchars = "tab:» ,trail:-,nbsp:+,eol:¬"
 
 opt.clipboard = "unnamedplus"
+
+opt.winborder = 'rounded'

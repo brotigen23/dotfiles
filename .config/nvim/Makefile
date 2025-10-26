@@ -1,4 +1,4 @@
-.PHONY: clean
+.PHONY: clean backup
 clean:
 	rm -rf ~/.local/share/nvim
 	rm -rf ~/.local/state/nvim
@@ -6,7 +6,6 @@ clean:
 	rm -rf ~/.config/nvim/lazy-lock.json
 
 
-.PHONY: backup
 backup:
 	mv ~/.config/nvim{,.bak}
 	mv ~/.local/share/nvim{,.bak}

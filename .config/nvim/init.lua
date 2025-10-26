@@ -1,7 +1,5 @@
-require('core.options')
-require('core.keymaps')
-
-require('Lazy')
+require('config')
+require('plugins')
 
 
 vim.cmd("colorscheme gruvbox") -- set color theme
