@@ -1,4 +1,4 @@
 return {
-    'nvim-web-devicons', 
-    color_icons = true
+	'nvim-web-devicons',
+	color_icons = true
 }

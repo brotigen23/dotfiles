@@ -18,7 +18,7 @@ return {
 			},
 			workspace = {
 				library = vim.api.nvim_get_runtime_file("", true), -- 👈 подключаем Neovim runtime
-				checkThirdParty = false,                   -- отключает лишние предупреждения о "third party"
+				checkThirdParty = false,               -- отключает лишние предупреждения о "third party"
 			},
 			telemetry = {
 				enable = false,

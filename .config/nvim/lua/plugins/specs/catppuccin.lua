@@ -1,4 +1,4 @@
-return { 
-    "catppuccin/nvim", 
-    as = "catppuccin" 
+return {
+	"catppuccin/nvim",
+	as = "catppuccin"
 }

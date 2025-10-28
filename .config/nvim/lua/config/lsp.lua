@@ -1,6 +1,7 @@
 vim.lsp.enable({
 	"lua_ls",
-	"gopls"
+	"gopls",
+	"css-lsp",
 })
 
 -- красивый ui для диагностики ошибок, варнингов и тд

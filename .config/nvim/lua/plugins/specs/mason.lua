@@ -1,5 +1,5 @@
-return{
+return {
 	"mason-org/mason.nvim",
-	lazy=false,
-	opts={}
+	lazy = false,
+	opts = {}
 }
