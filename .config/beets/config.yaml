@@ -1,0 +1,22 @@
+directory: ~/Music
+library: ~/Music/beets.db
+
+import:
+  log: beets.log
+  copy: yes
+  write: yes
+
+plugins:
+  - fetchart
+  - embedart
+  - duplicates
+  - deezer
+
+fetchart:
+  auto: yes
+
+embedart:
+  auto: yes
+
+paths:
+    default: $albumartist/($year) $album/$track. $title
