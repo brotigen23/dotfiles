@@ -1,7 +1,15 @@
 vim.lsp.enable({
+	-- INFO: base
 	"lua_ls",
+
+	-- INFO: backend
 	"gopls",
-	"css-lsp",
+
+	-- INFO: frontend
+	"astro",
+	"css_variables",
+	"cssls",
+	"cssmodules_ls",
 })
 
 -- красивый ui для диагностики ошибок, варнингов и тд
