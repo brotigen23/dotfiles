@@ -11,12 +11,19 @@ plugins:
   - embedart
   - duplicates
   - deezer
+  - lyrics
+  - discogs
 
 fetchart:
   auto: yes
+  sources:
+    - "*"
 
 embedart:
   auto: yes
 
 paths:
-    default: $albumartist/($year) $album/$track. $title
+  default: "%upper{%left{$albumartist, 1}}/$albumartist/$data_source/($year) $album/$track. $title"
+
+ui:
+  color: yes
