@@ -1,0 +1,12 @@
+{
+    "chat.disableAIFeatures": true,
+    "workbench.startupEditor": "none",
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "editor.fontWeight": "bold",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "terminal.integrated.fontWeight": "bold",
+    
+}
