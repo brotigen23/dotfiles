@@ -9,6 +9,7 @@
 # . $HOME/.config/bash/colors.sh
 # . $HOME/.config/bash/prompt.sh
 # PS1=$PROMPT
+. $HOME/.bash_aliases
 
 
 # Автодополнение (если установлено)
@@ -17,6 +18,6 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # Starship prompt
-eval "$(starship init bash)"
+#eval "$(starship init bash)"
 
 . "$HOME/.cargo/env"

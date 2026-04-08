@@ -1,8 +1,8 @@
-local options= {
-	sections ={
-		lualine_c = {'lsp_status', 'filename'},
+local options = {
+	sections = {
+		lualine_c = { 'filename', 'lsp_status' },
 	}
 }
 
-vim.pack.add({'https://github.com/nvim-lualine/lualine.nvim'})
+vim.pack.add({ 'https://github.com/nvim-lualine/lualine.nvim' })
 require('lualine').setup(options)
