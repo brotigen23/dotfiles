@@ -1,3 +1,12 @@
+paths:
+  default: "$albumartist/($year) $album/$track. $title"
+  #comp: "comps/$albumartist/($year) $album/$track. $title" # Для альбомов с несколькими артистами
+  #singleton: "singles/$albumartist/($year) $album/$track. $title" # Для синглов
+
+format_item: ($format) $albumartist - $album - $track - $title
+
+format_album: ($year) $albumartist - $album %upper{[$albumtype]} %upper{{$data_source}}
+
 directory: ~/Music
 library: ~/Music/beets.db
 
@@ -7,23 +16,26 @@ import:
   write: yes
 
 plugins:
-  - fetchart
-  - embedart
-  - duplicates
-  - deezer
-  - lyrics
-  - discogs
+  - fetchart    # Скачивание обложек
+  - embedart    # Встраивание обложек в файлы
+  - duplicates  # Вывод дубликатов в запросах
+  - deezer      # Фетч метаданных с deezer
+  - lyrics      # фетч текстов в метаданные
+  - discogs     # фетч метаданных с discogs для бонус треков или подобного
+  - missing     # недостающие в альбомах треки
 
 fetchart:
   auto: yes
+  minwidth: 200
+  maxwidth: 200
+  enforce_ration: yes # 1:1 соотношения сторон
   sources:
     - "*"
 
 embedart:
   auto: yes
+  remove_art_file: yes
 
-paths:
-  default: "$albumartist/($year) $album/$track. $title"
 
 ui:
   color: yes

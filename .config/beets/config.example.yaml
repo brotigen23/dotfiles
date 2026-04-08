@@ -1,0 +1,146 @@
+#
+# Source: https://github.com/beetbox/beets/issues/2792
+#
+
+paths:
+    default: $albumartist/$album/%if{$disc == 0 && $totaldisc == 1, 01, $disc} - $track - $title
+    comp: Compilations/$album/%if{$disc == 0 && $totaldisc == 1, 01, $disc} - $track - $title
+
+format_item: ($format) $artistalbum - $album - $track - $title
+
+format_album: ($format) $artistalbum - $album
+
+fetchart:
+    cautious: yes
+    minwidth: 200
+    maxwidth: 200
+    enforce_ratio: yes
+    sources:
+    - filesystem
+    - bandcamp
+    - coverart
+    - amazon
+    - albumart
+    - wikipedia
+    - google
+    auto: yes
+    google_engine: 001442825323518660753:hrh5ch1gjzm
+    store_source: no
+    google_key: REDACTED
+    fanarttv_key: REDACTED
+    cover_names:
+    - cover
+    - front
+    - art
+    - album
+    - folder
+edit:
+    itemfields:
+    - track
+    - title
+    - artist
+    - albumartist
+    - album
+    - genre
+    albumfields: album albumartist
+    ignore_fields: id path
+missing:
+    format: $albumartist - $album - $title
+    count: no
+    total: no
+    album: no
+bandcamp:
+    art: yes
+    min_candidates: 5
+    lyrics: no
+    source_weight: 0.5
+ignore:
+- Ringtones
+- '#recycle'
+- .*
+- '*~'
+- System Volume Information
+- lost+found
+- .m4r
+zero:
+    fields: comments
+    update_database: yes
+    auto: yes
+    keep_fields: []
+
+clutter:
+- Thumbs.db
+- .DS_Store
+- '*.m3u'
+- '*.pls'
+- '*.nfo'
+- '*.sfv'
+- '*.jpg'
+- '*.jpeg'
+- '*.png'
+- '*.url'
+- '*.URL'
+- '*.txt'
+- '*.ini'
+
+plugins:
+- discogs
+- bandcamp
+- fetchart
+- embedart
+- chroma
+- zero
+- scrub
+- duplicates
+- missing
+- edit
+- lastgenre
+directory: /Volumes/music/
+
+import:
+    copy: no
+    write: yes
+    move: yes
+lastgenre:
+    source: album
+    count: 3
+    force: yes
+    canonical: ~/Documents/git/devil.station/beets/genres-tree.yaml
+    whitelist: ~/Documents/git/devil.station/beets/genres.txt
+    prefer_specific: yes
+    min_weight: 20
+    fallback: ''
+    aliases: ~/Documents/git/devil.station/beets/genre-aliases.yaml
+    separator: ;
+    auto: yes
+discogs:
+    tokenfile: discogs_token.json
+    user_token: REDACTED
+    apikey: REDACTED
+    apisecret: REDACTED
+    source_weight: 0.5
+duplicates:
+    count: no
+    full: no
+    format: ''
+    keys: []
+    move: ''
+    tag: ''
+    path: no
+    copy: ''
+    tiebreak: {}
+    album: no
+    strict: no
+    checksum: ''
+    merge: no
+    delete: no
+embedart:
+    compare_threshold: 0
+    auto: yes
+    ifempty: no
+    remove_art_file: no
+    maxwidth: 0
+chroma:
+    auto: yes
+scrub:
+    auto: yes
