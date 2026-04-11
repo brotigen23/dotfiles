@@ -20,4 +20,5 @@ fi
 # Starship prompt
 #eval "$(starship init bash)"
 
+export PATH="$PATH:$HOME/.local/bin"
 . "$HOME/.cargo/env"
