@@ -12,7 +12,9 @@ lsp.enable({
 	"astro",
 	"css_variables",
 	"cssls",
-	"cssmodules_ls"
+	"cssmodules_ls",
+
+    "hledger_lsp"
 })
 
 -- Первый вариант
