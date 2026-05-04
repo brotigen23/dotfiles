@@ -28,10 +28,13 @@ opt.clipboard = "unnamedplus"
 
 opt.winborder = 'rounded'
 
-local o = vim.o
+-- local o = vim.o
 
 -- vim.o.complete = ".,o"
-o.complete = "o,.,w,b,u"
-o.completeopt = "fuzzy,menuone,noselect" -- добавить 'popup' для доков (иногда)
-o.autocomplete = true
+-- o.complete = "o,.,w,b,u"
+opt.complete = {'o', '.', 'w', 'b', 'u'}
+-- o.completeopt = "fuzzy,menuone,noselect" -- добавить 'popup' для доков (иногда)
+opt.completeopt = {'fuzzy', 'menuone', 'noselect'}
+-- o.autocomplete = true
+opt.autocomplete = true
 

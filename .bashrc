@@ -22,3 +22,4 @@ fi
 
 export PATH="$PATH:$HOME/.local/bin"
 . "$HOME/.cargo/env"
+. "/usr/share/nvm/init-nvm.sh"
