@@ -12,17 +12,17 @@ opt.relativenumber = true
 -- \t, пробелов и табов(trail) в конце строки, неразрывных пробелов(nbsp) и \n
 opt.list = true
 -- opt.listchars = "tab:⇥ ,trail:-,nbsp:+,eol:⏎"
-opt.listchars = {
-	space = '·',      -- Символ для пробела
-	tab = '·┈',
-	trail = '￮',
-	multispace = '￮',
-	lead = ' ',
-	extends = '▶',
-	precedes = '◀',
-	nbsp = '‿',
-	eol = '↴' -- Дополнительно: символ конца строки
-}
+-- opt.listchars = {
+-- 	space = '·',      -- Символ для пробела
+-- 	tab = '·┈',
+-- 	trail = '￮',
+-- 	multispace = '￮',
+-- 	lead = ' ',
+-- 	extends = '▶',
+-- 	precedes = '◀',
+-- 	nbsp = '‿',
+-- 	eol = '↴' -- Дополнительно: символ конца строки
+-- }
 
 opt.clipboard = "unnamedplus"
 
